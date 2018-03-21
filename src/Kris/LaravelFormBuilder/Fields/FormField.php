@@ -280,6 +280,7 @@ abstract class FormField
         if ($this->getOption('attr.multiple') && !$this->getOption('tmp.multipleBracesSet')) {
             $this->name = $this->name.'[]';
             $this->setOption('tmp.multipleBracesSet', true);
+
         }
 
         if ($this->parent->haveErrorsEnabled()) {
